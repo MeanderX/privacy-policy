@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Comment Search for YouTube</title>
+  <meta name="description" content="Privacy policy for the Comment Search for YouTube browser extension: no data collection, all processing local.">
+  <style>
+    :root { color-scheme: dark; }
+    body {
+      margin: 0;
+      padding: 48px 20px 80px;
+      background: #0f0f0f;
+      color: #f1f1f1;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+    }
+    main { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 24px; margin: 0 0 4px; }
+    .badge {
+      display: inline-block;
+      background: #22c55e;
+      color: #041a0b;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+    h2 { font-size: 17px; margin: 32px 0 8px; color: #fff; }
+    p, li { color: #d4d4d4; }
+    a { color: #60a5fa; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { padding-left: 22px; }
+    .updated { color: #888; font-size: 13px; margin-bottom: 8px; }
+    footer { margin-top: 56px; color: #666; font-size: 13px; border-top: 1px solid #262626; padding-top: 16px; }
+    code { background: #1c1c1c; border: 1px solid #2a2a2a; border-radius: 6px; padding: 1px 6px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <div class="updated">Comment Search for YouTube &middot; Last updated: September 29, 2026</div>
+    <span class="badge">No data collection</span>
+
+    <p><strong>Comment Search for YouTube</strong> (the "Extension") loads comments,
+    replies and live-chat messages from YouTube videos so you can search them by
+    content or author and export them to CSV/JSON.</p>
+
+    <h2>What the Extension collects</h2>
+    <p><strong>Nothing is collected by the Extension.</strong> The Extension has no
+    analytics, telemetry, tracking, or any server of its own. It makes network
+    requests only to YouTube itself (to render the page you are already visiting)
+    and, if you use the purchase flow, to ExtensionPay (see <em>Purchases</em>
+    below).</p>
+
+    <h2>How your data is handled</h2>
+    <ul>
+      <li><strong>YouTube comments</strong> you capture with the Extension are read
+      from the page you are viewing and processed <strong>entirely locally</strong>
+      in your browser. They are never uploaded, transmitted, or shared with anyone.</li>
+      <li><strong>Search</strong> runs locally against the captured comments in memory.</li>
+      <li><strong>Exports</strong> (CSV/JSON) are generated locally in your browser
+      and downloaded directly to your computer.</li>
+    </ul>
+
+    <h2>Local storage</h2>
+    <p>The Extension uses the <code>chrome.storage</code> API to store only:</p>
+    <ul>
+      <li>the number of free exports you have used, and</li>
+      <li>your license / paid status (including the anonymous ExtensionPay key).</li>
+    </ul>
+    <p>This data never leaves your browser except the paid-status check described
+    below, and is removed when you uninstall the Extension or clear its storage.</p>
+
+    <h2>Purchases</h2>
+    <p>If you choose to buy a license, you are taken to a checkout page hosted by
+    <strong>ExtensionPay</strong> (<a href="https://extensionpay.com">extensionpay.com</a>),
+    which processes the payment through <strong>Stripe</strong>. The Extension
+    communicates with ExtensionPay servers only to check your paid status (via an
+    anonymous key stored locally in your browser). Your email is only involved if
+    you enter it at checkout or when logging in on another device; payment details
+    are handled solely by Stripe under
+    <a href="https://stripe.com/privacy">Stripe's privacy policy</a>. The Extension
+    never sees your payment details.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><code>storage</code> — to remember your export count and license status.</li>
+      <li>Host access to <code>youtube.com</code> — the Extension only runs on
+      YouTube pages, where its single purpose (comment search and export) applies.</li>
+      <li>Host access to <code>extensionpay.com</code> — used only for the optional
+      purchase / license-login flow. Nothing on that site is read or modified
+      beyond the payment status check.</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Contact:
+    <a href="mailto:moritz.stanglmeier@gmail.com">moritz.stanglmeier@gmail.com</a></p>
+
+    <footer>Comment Search for YouTube &middot; Privacy Policy</footer>
+  </main>
+</body>
+</html>
